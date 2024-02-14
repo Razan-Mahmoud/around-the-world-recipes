@@ -17,7 +17,7 @@ import CategMeals from './Components/CategMeals/CategMeals'
 export default function App() {
 let routes = createBrowserRouter([
   {path: "", element: <Layout/>, children:[
-    {path:"/", element:<Home/>},
+    {path:"./", element:<Home/>},
     {path:"home", element:<Home/>},
     {path: "area", element: <Area/>},
     {path: "search", element: <Search/>},

@@ -1,0 +1,82 @@
+:root{
+    --mainColor: #f6b0bb;
+}
+body{
+    background-color: var(--mainColor);
+   
+    line-height: 1.5rem;
+    
+  color: #422d09;
+}
+.offNav{
+   position: fixed;
+   left: 0px;
+   top: 0px;
+   bottom: 0px;
+   background-color: var(--mainColor);
+   width: 20%;
+   z-index: 6689;
+   display: flex;
+}
+.offNav-inner{
+    width: 80%;
+    height: 100%;
+}
+.offNav-icons{
+    width: 20%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.offNav-icons i{
+    cursor: pointer;
+}
+.xMark{
+    display: none;
+}
+.coverImg{
+    object-position: center;
+    object-fit:cover;
+}
+.item{
+    cursor: pointer;
+}
+.layer{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: rgba(240, 248, 255, 0.512);
+}
+.item:hover .layer{
+    top: 0px;
+    transition: all 1s;
+}
+.spinClass{
+    z-index: 89898;
+    display: flex;
+}
+.ingBtn{
+    background-color: #e4b78f;
+}
+.tagBtn{
+    background-color: #f1e8ea;
+    border: #f1e8ea;
+}
+.mealItem, .ingredItem{
+    text-decoration: none;
+    color:  #422d09;
+}
+.fa-drumstick-bite, .fa-house-laptop{
+    color:  #be3f12;
+    cursor: pointer;
+}
+#byNameRecipe{
+    display:none;
+}
+.submitBtn{
+    /* background-color: #468f5e; */
+    color: var(--mainColor);
+    font-weight: 500;
+}

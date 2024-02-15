@@ -19,7 +19,7 @@ export default function Categories() {
      <div className="row g-3">
     {categ.map((el)=>{
           return <div key={el.idCategory} className="col-md-3 mealItem">
-            <Link to={"/categMeals" + "/" + el.strCategory}>
+            <Link to={"/around-the-world-recipes/categMeals" + "/" + el.strCategory}>
           <div  className='item position-relative overflow-hidden rounded'>
           <img src={el.strCategoryThumb} className="coverImg w-100" alt="" />
          <div className="layer rounded d-flex justify-content-center align-items-center flex-column">

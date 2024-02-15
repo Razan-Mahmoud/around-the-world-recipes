@@ -20,7 +20,7 @@ export default function Area() {
     <div className="row g-2 my-4">
      {areas.map((el)=>{
       return <div key={el.strArea} className="col-md-3 ">
-      <Link className='mealItem' to={"/"+el.strArea + "/" +"mealsByArea/" }>
+      <Link className='mealItem' to={"/around-the-world-recipes/"+el.strArea + "/" +"mealsByArea/" }>
       <div>
       <i className='fa-solid fa-house-laptop fa-5x '></i>
       <h3>{el.strArea}</h3>

@@ -21,7 +21,7 @@ useEffect(()=>{
 <div className="row">
   {ingrList.map((el)=>{
     return <div key={el.idIngredient} className="col-md-3 mt-2">
-   <Link className='ingredItem' to={"/mainIngred/"+ el.idIngredient + "/" + el.strIngredient}>
+   <Link className='ingredItem' to={"/around-the-world-recipes/mainIngred/"+ el.idIngredient + "/" + el.strIngredient}>
     <div className='p-2  text-center'>
 <i className="fa-solid fa-drumstick-bite fa-4x"></i>
 <h4 className='m-1'>{el.strIngredient}</h4>

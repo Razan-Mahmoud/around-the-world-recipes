@@ -3,7 +3,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Home from '../Home/Home'
-
+import $ from 'jquery'
 
 export default function Search() {
 

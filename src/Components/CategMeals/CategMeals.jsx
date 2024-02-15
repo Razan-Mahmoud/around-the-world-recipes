@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-
+import $ from 'jquery'
 export default function CategMeals() {
 let {id} = useParams()
 

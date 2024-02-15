@@ -40,11 +40,11 @@ $(".xMark").css("display", "block")
       <div className='offNav-inner p-3'>
 
 <ul className='my-3 list-unstyled d-flex flex-column'>
-  <Link onClick={calcWidth} className='nav-link' to="search">Search</Link>
-  <Link onClick={calcWidth} className='nav-link' to='categories'>Categories</Link>
-  <Link onClick={calcWidth} className='nav-link' to='area'>Area</Link>
-  <Link onClick={calcWidth} className='nav-link' to='ingredients'>Ingredients</Link>
-  <Link onClick={calcWidth} className='nav-link' to='contactUs'>Contact Us</Link>
+  <Link onClick={calcWidth} className='nav-link' to="/around-the-world-recipes/search">Search</Link>
+  <Link onClick={calcWidth} className='nav-link' to='/around-the-world-recipes/categories'>Categories</Link>
+  <Link onClick={calcWidth} className='nav-link' to='/around-the-world-recipes/area'>Area</Link>
+  <Link onClick={calcWidth} className='nav-link' to='/around-the-world-recipes/ingredients'>Ingredients</Link>
+  <Link onClick={calcWidth} className='nav-link' to='/around-the-world-recipes/contactUs'>Contact Us</Link>
 </ul>
 
 <div className='mt-5 pt-4'>
@@ -57,7 +57,7 @@ $(".xMark").css("display", "block")
       <div className='offNav-icons bg-light d-flex justify-content-between  p-1'>
 
        <div className='my-4'> 
-       <Link to='/'><img src={logo} alt="smiley face" className='logo w-100' /></Link>
+       <Link to='/around-the-world-recipes/'><img src={logo} alt="smiley face" className='logo w-100' /></Link>
        </div>
 
        <div onClick={calcWidth} className='my-3'>

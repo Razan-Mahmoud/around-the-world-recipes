@@ -16,18 +16,18 @@ import CategMeals from './Components/CategMeals/CategMeals'
 
 export default function App() {
 let routes = createBrowserRouter([
-  {path: "", element: <Layout/>, children:[
-    {path:"./", element:<Home/>},
-    {path:"home", element:<Home/>},
-    {path: "area", element: <Area/>},
-    {path: "search", element: <Search/>},
-    {path: "ingredients", element: <Ingredients/>},
-    {path: "mainIngred/:id/:categ", element: <MainIngred/>},
-    {path: "contactUs", element: <ContactUs/>},
-    {path: "categories", element: <Categories/>},
-    {path: "categMeals/:id", element: <CategMeals/>},
-    {path: "recipe/:id/", element: <Recipe/>},
-    {path: ":area/mealsByArea/", element: <MealsByArea/>},
+  {path: "/around-the-world-recipes/", element: <Layout/>, children:[
+    {path:"/around-the-world-recipes/", element:<Home/>},
+    {path:"/around-the-world-recipes/home", element:<Home/>},
+    {path: "/around-the-world-recipes/area", element: <Area/>},
+    {path: "/around-the-world-recipes/search", element: <Search/>},
+    {path: "/around-the-world-recipes/ingredients", element: <Ingredients/>},
+    {path: "/around-the-world-recipes/mainIngred/:id/:categ", element: <MainIngred/>},
+    {path: "/around-the-world-recipes/contactUs", element: <ContactUs/>},
+    {path: "/around-the-world-recipes/categories", element: <Categories/>},
+    {path: "/around-the-world-recipes/categMeals/:id", element: <CategMeals/>},
+    {path: "/around-the-world-recipes/recipe/:id/", element: <Recipe/>},
+    {path: "/around-the-world-recipes/:area/mealsByArea/", element: <MealsByArea/>},
   ]}
 ])
   

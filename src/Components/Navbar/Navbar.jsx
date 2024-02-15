@@ -37,7 +37,7 @@ $(".xMark").css("display", "block")
     <>
     <div className='offNav '>
       
-      <div className='offNav-inner p-3'>
+<div className='offNav-inner p-3'>
 
 <ul className='my-3 list-unstyled d-flex flex-column'>
   <Link onClick={calcWidth} className='nav-link' to="/around-the-world-recipes/search">Search</Link>

@@ -1,8 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import jQuery from '../../node_modules/jquery/dist/jquery.js'
-
 
 export default function Home() {
 

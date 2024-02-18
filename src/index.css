@@ -14,7 +14,7 @@ body{
    top: 0px;
    bottom: 0px;
    background-color: var(--mainColor);
-   width: 25%;
+   width: 20%;
    z-index: 6689;
    display: flex;
 }
@@ -28,8 +28,11 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.offNav-icons i{
+/* .offNav-icons i{
     cursor: pointer;
+} */
+.fa-grip-lines, .fa-x{
+font-size:x-large;
 }
 .xMark{
     display: none;
@@ -79,4 +82,31 @@ body{
     /* background-color: #468f5e; */
     color: var(--mainColor);
     font-weight: 500;
+}
+
+
+
+@media screen and (max-widh: 979px) and (min-widh: 768px) {
+    .offNav{
+        width: 40%;
+    }
+}
+@media screen and (max-widh: 767px) and (min-widh: 500px) {
+    .offNav{
+        width: 40%;
+    }
+}
+@media screen and (max-widh: 499px){
+    .offNav{
+        width: 40%;
+    } 
+    .offNav-inner{
+        width: 70%;
+    }
+    .offNav-icons{
+        width: 30%;
+    }
+    .fa-grip-lines, .fa-x{
+        font-size: large;
+    }
 }

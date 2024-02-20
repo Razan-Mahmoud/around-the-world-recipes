@@ -46,7 +46,7 @@ console.log(data);
   return (
     <>
   
-   <div className="row d-flex justify-content-center align-items-center mb-4">
+   <div className="row mx-5 d-flex justify-content-center align-items-center mb-4">
      <div className="col-md-6 mt-2">
      <form >
         <input onKeyUp={(e)=>handleChange(e.target.value)} type="text" name="mealName" id='mealName' className='form-control bg-transparent border-2' placeholder='Search by name'/>
@@ -119,20 +119,17 @@ console.log(data);
 
 
 
-
-
-    <div className="container my-2">
+    <div className="container my-2 mx-auto">
 
 <div className="row g-3">
 {letterList? letterList.map((el)=>{
       return <div key={el.idMeal} className="col-md-3 mealItem">
-        <Link to={'/around-the-world-recipes/recipe/'+ el.idMeal + "/"}>
-      <div  className='item position-relative overflow-hidden rounded'>
-      <img src={el.strMealThumb} className="coverImg w-100" alt="" />
-     <div className="layer rounded d-flex justify-content-center align-items-center">
-    <h3>{el.strMeal}</h3>
-     </div>
+        <Link to={'/around-the-world-recipes/recipe/'+ el.idMeal + "/"} className='text-decoration-none'>
+      <div  className='item '>
+      <img src={el.strMealThumb} className="coverImg w-100 rounded" alt="" />
+      <div className='itemTitle text-center rounded'><h3>{el.strMeal}</h3></div>
       </div>
+      
       </Link>
     </div>
     }): ""}

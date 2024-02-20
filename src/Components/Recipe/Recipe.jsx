@@ -12,7 +12,7 @@ export default function Recipe() {
         let {data} = await axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
         recipe = data.meals[0]
        setRecipe(data.meals[0])
-    //    console.log(recipe);
+   
   
      
     }

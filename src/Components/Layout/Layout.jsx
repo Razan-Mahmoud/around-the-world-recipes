@@ -7,14 +7,16 @@ import { Outlet } from 'react-router-dom'
 export default function Layout() {
   return (
     <>
- <Navbar/>
+
 <div className="container-fluid ">
- <div className="row ">
- <div className='col-md-9 mx-auto my-3'>
-    
+<Navbar/>
 <Outlet/>
+ {/* <div className="row ">
+ <div className=' mx-auto my-3'>
+    
+
 </div>
-  </div>
+  </div> */}
 </div>
      
     

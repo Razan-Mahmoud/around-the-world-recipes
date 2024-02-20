@@ -18,6 +18,7 @@ useEffect(()=>{
 
   return (
     <>
+<div className="container my-3">
 <div className="row">
   {ingrList.map((el)=>{
     return <div key={el.idIngredient} className="col-md-3 mt-2">
@@ -31,6 +32,7 @@ useEffect(()=>{
   </div>
   })}
   
+</div>
 </div>
     </>
   )

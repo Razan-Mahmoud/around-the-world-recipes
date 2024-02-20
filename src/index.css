@@ -8,6 +8,7 @@ body{
     
   color: #422d09;
 }
+
 .offNav{
    position: fixed;
    left: 0px;
@@ -27,12 +28,18 @@ body{
     height: 100%;
     flex-direction: column;
     align-items: center;
+    
+}
+.logo{
+    width: 100%;
+    padding-top: 5px;
 }
 /* .offNav-icons i{
     cursor: pointer;
 } */
 .fa-grip-lines, .fa-x{
 font-size:x-large;
+cursor: pointer;
 }
 .xMark{
     display: none;
@@ -44,7 +51,13 @@ font-size:x-large;
 .item{
     cursor: pointer;
 }
-.layer{
+.itemTitle{
+    background-color: #f1e8ea;
+}
+.itemTitle h3, .itemTitle p{
+    color:#422d09;
+}
+/* .layer{
     position: absolute;
     top: 100%;
     width: 100%;
@@ -55,7 +68,7 @@ font-size:x-large;
 .item:hover .layer{
     top: 0px;
     transition: all 1s;
-}
+} */
 .spinClass{
     z-index: 89898;
     display: flex;
@@ -85,28 +98,37 @@ font-size:x-large;
 }
 
 
-
-@media screen and (max-widh: 979px) and (min-widh: 768px) {
+/* iPads (portrait and landscape) ----------- */
+ 
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* Styles */
     .offNav{
-        width: 40%;
-    }
-}
-@media screen and (max-widh: 767px) and (min-widh: 500px) {
-    .offNav{
-        width: 40%;
-    }
-}
-@media screen and (max-widh: 499px){
-    .offNav{
-        width: 40%;
+        width: 35%;
     } 
     .offNav-inner{
-        width: 70%;
+        width: 80%;
     }
     .offNav-icons{
-        width: 30%;
+        width: 20%;
     }
     .fa-grip-lines, .fa-x{
         font-size: large;
     }
-}
+    .logo{
+        width: 100%;
+    }
+  }
+
+ 
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    /* Styles */
+    
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Styles */
+   
+  }
+  @media only screen and (min-width: 1025px) and (max-width: 1224px) {
+    /* Styles */
+  }
+  

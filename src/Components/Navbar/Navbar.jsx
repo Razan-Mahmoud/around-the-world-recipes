@@ -35,9 +35,9 @@ $(".xMark").css("display", "block")
 
   return (
     <>
-    <div className='offNav bg-info'>
+    <div className='offNav'>
       
-<div className='offNav-inner ps-2 bg-warning'>
+<div className='offNav-inner ps-2 '>
 
 <ul className='my-3 list-unstyled d-flex flex-column'>
   <Link onClick={calcWidth} className='nav-link' to="/around-the-world-recipes/search">Search</Link>
@@ -54,10 +54,10 @@ $(".xMark").css("display", "block")
 <p>Copyright Â© 2019 All Rights Reserved.</p>
 </div>
       </div>
-      <div className='offNav-icons bg-light d-flex justify-content-between  p-1 bg-success'>
+      <div className='offNav-icons bg-light d-flex justify-content-between   '>
 
        <div > 
-       <Link to='/around-the-world-recipes/'><img src={logo} alt="smiley face" className='logo w-100' /></Link>
+       <Link to='/around-the-world-recipes/'><img src={logo} alt="smiley face" className='logo' /></Link>
        </div>
 
        <div onClick={calcWidth} className='my-3'>

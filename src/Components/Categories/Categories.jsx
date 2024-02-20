@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import $ from 'jquery'
+
 
 export default function Categories() {
 
@@ -17,23 +17,27 @@ export default function Categories() {
   },[])
   return (
     <>
+     <div className="container my-3">
      <div className="row g-3">
     {categ.map((el)=>{
           return <div key={el.idCategory} className="col-md-3 mealItem">
-            <Link to={"/around-the-world-recipes/categMeals" + "/" + el.strCategory}>
+            <Link to={"/around-the-world-recipes/categMeals" + "/" + el.strCategory} className='text-decoration-none'>
           <div  className='item position-relative overflow-hidden rounded'>
           <img src={el.strCategoryThumb} className="coverImg w-100" alt="" />
-         <div className="layer rounded d-flex justify-content-center align-items-center flex-column">
-        <h3>{el.strCategory}</h3>
-       <div className='text-center overflow-hidden'>
-       <p>{el.strCategoryDescription}</p>
-       </div>
-         </div>
+          <div className='itemTitle text-center rounded overflow-hidden'><h3>{el.strCategory}</h3>
+          <p>
+            <span>
+            {el.strCategoryDescription?.split(" ").splice(0,8).join(" ")}
+            </span> <span className='text-primary'>..see more</span>
+          </p>
+          
+          </div>
           </div>
           </Link>
         </div>
         })}
     </div>
+     </div>
     </>
   )
 }

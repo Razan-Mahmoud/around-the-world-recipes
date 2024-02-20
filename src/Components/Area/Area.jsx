@@ -18,6 +18,7 @@ export default function Area() {
   return (
     <>
   
+    <div className="container my-3">
     <div className="row g-2 my-4">
      {areas.map((el)=>{
       return <div key={el.strArea} className="col-md-3 ">
@@ -29,6 +30,7 @@ export default function Area() {
       </Link>
     </div>
      })}
+    </div>
     </div>
   
     

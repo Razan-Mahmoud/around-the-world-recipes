@@ -30,6 +30,7 @@ console.log(vals);
   })
   return (
    <>
+   <div className="container my-3">
    <h2>Contact us:</h2>
    <form onSubmit={formik.handleSubmit}>
     <div className="row ">
@@ -91,6 +92,7 @@ console.log(vals);
       </div>
     </div>
     </form>
+   </div>
    </>
   )
 }

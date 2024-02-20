@@ -36,7 +36,7 @@ export default function MainIngred() {
         </div>
         })}
     </div>
-    <i onClick={backBtn} class="fa-solid fa-square-caret-left text-primary fa-2x mt-1"></i>
+    <i onClick={backBtn} class="fa-solid fa-square-caret-left text-primary fa-2x m-3 position-fixed bottom-0 end-0"></i>
     </div>
    
     </>

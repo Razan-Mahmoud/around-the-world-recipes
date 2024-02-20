@@ -95,7 +95,9 @@ cursor: pointer;
     font-weight: 500;
 }
 
-
+.fa-square-caret-left{
+    z-index: 9568;
+}
 /* iPads (portrait and landscape) ----------- */
  
   @media screen and (max-width: 480px) {
@@ -119,8 +121,8 @@ cursor: pointer;
     .mealItem{
         width: 50%;
     }
-    container{
-        padding-left: 20px;
+    .container{
+        padding-left: 30px;
     }
   }
 

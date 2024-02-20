@@ -105,6 +105,7 @@ cursor: pointer;
     } 
     .offNav-inner{
         width: 80%;
+        
     }
     .offNav-icons{
         width: 20%;
@@ -118,8 +119,10 @@ cursor: pointer;
     .mealItem{
         width: 50%;
     }
+    container{
+        padding-left: 20px;
+    }
   }
-
 
  
 @media screen and (min-width: 481px) and (max-width: 767px) {

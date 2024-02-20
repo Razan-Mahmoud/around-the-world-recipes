@@ -34,9 +34,7 @@ body{
     width: 100%;
     padding-top: 5px;
 }
-/* .offNav-icons i{
-    cursor: pointer;
-} */
+
 .fa-grip-lines, .fa-x, .fa-square-caret-left{
 font-size:x-large;
 cursor: pointer;
@@ -100,7 +98,7 @@ cursor: pointer;
 
 /* iPads (portrait and landscape) ----------- */
  
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     /* Styles */
     .offNav{
         width: 35%;
@@ -117,18 +115,26 @@ cursor: pointer;
     .logo{
         width: 100%;
     }
+    .mealItem{
+        width: 50%;
+    }
   }
 
+
  
-@media only screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
     /* Styles */
-    
+    .mealItem{
+        width: 33.3333%;
+    }
   }
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     /* Styles */
-   
+    .mealItem{
+        width: 33.3333%;
+    }
   }
-  @media only screen and (min-width: 1025px) and (max-width: 1224px) {
+  @media screen and (min-width: 1025px) and (max-width: 1224px) {
     /* Styles */
   }
   

@@ -14,8 +14,9 @@ export default function MainIngred() {
   async function getMain(){
     let {data} = await axios.get(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${categ}`)
     setmainIngredient(data.meals);
-
-   
+  }
+  function backBtn(){
+    window.history.back();
   }
   return (
     <>
@@ -35,6 +36,7 @@ export default function MainIngred() {
         </div>
         })}
     </div>
+    <i onClick={backBtn} class="fa-solid fa-square-caret-left text-primary fa-2x mt-1"></i>
     </div>
    
     </>

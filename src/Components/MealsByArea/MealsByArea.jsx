@@ -16,6 +16,9 @@ let {area} = useParams()
     setFoodList(data.meals);
     
   }
+  function backBtn(){
+    window.history.back();
+  }
   return (
     <>
   <div className="container my-3">
@@ -32,6 +35,7 @@ let {area} = useParams()
         </div>
         })}
     </div>
+    <i onClick={backBtn} class="fa-solid fa-square-caret-left text-primary fa-2x mt-1"></i>
   </div>
     </>
   )

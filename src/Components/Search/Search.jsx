@@ -43,6 +43,9 @@ async function searchByFirstLetter(value){
 console.log(data);
 
 }
+function backBtn(){
+  window.history.back();
+}
   return (
     <>
   
@@ -134,6 +137,7 @@ console.log(data);
     </div>
     }): ""}
 </div>
+<i onClick={backBtn} class="fa-solid fa-square-caret-left text-primary fa-2x mt-1"></i>
 </div>
     </>
   )

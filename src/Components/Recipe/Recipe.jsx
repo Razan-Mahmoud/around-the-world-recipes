@@ -21,7 +21,9 @@ export default function Recipe() {
        
     },[])
 
-
+    function backBtn(){
+        window.history.back();
+      }
   return (
     <>
     <div className="container my-5">
@@ -77,6 +79,7 @@ export default function Recipe() {
                 </div>
             </div>
         </div>
+        <i onClick={backBtn} class="fa-solid fa-square-caret-left text-primary fa-2x mt-1"></i>
     </div>
     </>
   )

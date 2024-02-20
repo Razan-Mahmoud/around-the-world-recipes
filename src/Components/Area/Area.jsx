@@ -14,7 +14,10 @@ export default function Area() {
   //  console.log(areas);
   }
 
-  
+  function backBtn(){
+    window.history.back();
+  }
+
   return (
     <>
   
@@ -31,6 +34,7 @@ export default function Area() {
     </div>
      })}
     </div>
+    <i onClick={backBtn} class="fa-solid fa-square-caret-left text-primary fa-2x mt-1"></i>
     </div>
   
     

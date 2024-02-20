@@ -37,7 +37,7 @@ body{
 /* .offNav-icons i{
     cursor: pointer;
 } */
-.fa-grip-lines, .fa-x{
+.fa-grip-lines, .fa-x, .fa-square-caret-left{
 font-size:x-large;
 cursor: pointer;
 }

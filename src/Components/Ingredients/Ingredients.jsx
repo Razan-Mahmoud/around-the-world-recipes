@@ -24,9 +24,9 @@ function backBtn(){
 <div className="container my-3">
 <div className="row">
   {ingrList.map((el)=>{
-    return <div key={el.idIngredient} className="col-md-3 mt-2">
+    return <div key={el.idIngredient} className="col-md-3 mt-2 ingredMeal">
    <Link className='ingredItem' to={"/around-the-world-recipes/mainIngred/"+ el.idIngredient + "/" + el.strIngredient}>
-    <div className='p-2  text-center'>
+    <div className='p-2 text-center '>
 <i className="fa-solid fa-drumstick-bite fa-4x"></i>
 <h4 className='m-1'>{el.strIngredient}</h4>
 <p className='m-1'>{el.strDescription? el.strDescription.split(" ").slice(0,10).join(" "): el.strDescription}</p>
